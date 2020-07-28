@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>From validation by &copy;Debasis</title>
+</head>
+<body class="grey darken-4">
+
+    <div class="container   ">
+        <h1 style="color: #1a237e; font-weight: bolder;">Sign Up</h1>
+        <div class="row">
+            <form action="" class="col s6 " id="formval" novalidate>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="First Name" id="firstName" onfocusout="valFirstName() "
+                            class="white-text">
+                        <span class="helper-text"></span>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="Last Name" id="lastName" onfocusout="valLastName()" class="white-text">
+                        <span class="helper-text"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="password">Password</label>
+                        <input type="password" name="Password" id="password" onfocusout="valPassword()" class="white-text">
+                        <span class="helper-text"></span>
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="Confirm Password" id="confirmPassword" onfocusout="valConfirmPassword()" class="white-text">
+                        <span class="helper-text"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="email">Email</label>
+                        <input type="email" name="Email" id="email" onfocusout="valEmail()" class="white-text">
+                        <span class="helper-text"></span>
+                    </div>
+                </div>
+                <button type="submit" class="btn waves-effect indigo darken-4">Sign Up</button>
+            </form>
+            <div class="col s6">
+                <img src="loginimg.png" alt="girl" style="width: 100%; border-radius: 6px;">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+</body>
+</html>
